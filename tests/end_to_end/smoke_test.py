@@ -59,7 +59,7 @@ class SmokeTest(unittest.TestCase):
         self.add_file("test.ok", json.dumps(
             {
                 "name": "Test Assignment",
-                "endpoint": "cal/cs61a/fa19/test",
+                "endpoint": "ucdenver/test/sp19/test",
                 "src": [
                     "test.py"
                 ],
