@@ -11,8 +11,8 @@ from client.api import assignment
 from client.utils import auth
 
 GITHUB_TOKEN_FILE = '.github-token'
-GITHUB_REPO = 'okpy/ok-client'
-OK_SERVER_URL = 'okpy.org'
+GITHUB_REPO = 'nnbaokhang/ok-client'
+OK_SERVER_URL = 'localhost:5000'
 
 def abort(message=None):
     if message:
