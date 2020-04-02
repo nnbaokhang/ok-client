@@ -4,7 +4,7 @@ import requests
 
 log = logging.getLogger(__name__)
 
-VERSION_ENDPOINT = 'https://{server}/api/v3/version/ok-client'
+VERSION_ENDPOINT = 'http://{server}/api/v3/version/ok-client'
 
 SHORT_TIMEOUT = 15  # seconds
 
