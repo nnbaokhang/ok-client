@@ -190,7 +190,7 @@ def authenticate(cmd_args, endpoint='', force=False):
     or refresh the OAuth token.
     """
     server = server_url(cmd_args)
-    network.check_ssl()
+  
     access_token = None
 
     try:
@@ -213,7 +213,7 @@ def notebook_authenticate(cmd_args, force=False, silent=True):
     it will suppress the error message and redirect to FORCE=True
     """
     server = server_url(cmd_args)
-    network.check_ssl()
+  
     access_token = None
     if not force:
         try:
