@@ -30,7 +30,7 @@ class BackupProtocol(models.Protocol):
             return
 
         if not self.args.insecure:
-            network.check_ssl()
+           # network.check_ssl()
 
         if self.args.revise:
             action = 'revision'
@@ -114,7 +114,8 @@ class BackupProtocol(models.Protocol):
 
     def send_all_messages(self, access_token, message_list, current=False):
         if not self.args.insecure:
-            ssl = network.check_ssl()
+           # ssl = network.check_ssl()
+            ssl = None
         else:
             ssl = None
 
