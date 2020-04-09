@@ -27,8 +27,7 @@ log = logging.getLogger(__name__)
 # However, for other authentication providers such as Azure Active Directory
 # this might not be the case so it's also possible to configure the secret
 # via an environment variable set in the Jupyter Notebook.
-CLIENT_SECRET = os.getenv('OK_CLIENT_SECRET',
-                          'EWKtcCp5nICeYgVyCPypjs3aLORqQ3H')
+CLIENT_SECRET = '0lWI9L5MZlkPrJRWEgVSxo3V6OXtxty'
 
 CLIENT_ID = 'ok-client'
 
