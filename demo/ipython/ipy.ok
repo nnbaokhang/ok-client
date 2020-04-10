@@ -2,7 +2,7 @@
   "name": "California Water Usage",
   "endpoint": "ok/test/su16/ex",
   "src": [
-    "Submit to OK.ipynb"
+    "OK.ipynb"
   ],
   "tests": {
       "ok_tests/q*.py": "ok_test"
