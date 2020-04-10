@@ -1,0 +1,7 @@
+identifier,file,manual,q1,q1H,q2,q2H,q3,q3H,total,possible
+fails3,demo-fails3.ipynb,manual_submissions/demo-fails3.pdf,1.0,2.0,1.0,1.0,0.0,0.0,5.0,8
+fails3Hidden,demo-fails3Hidden.ipynb,manual_submissions/demo-fails3Hidden.pdf,1.0,2.0,1.0,1.0,1.0,0.0,6.0,8
+passesAll,demo-passesAll.ipynb,manual_submissions/demo-passesAll.pdf,1.0,2.0,1.0,1.0,1.0,0.0,6.0,8
+fails2,demo-fails2.ipynb,manual_submissions/demo-fails2.pdf,1.0,2.0,0.0,0.0,1.0,0.0,4.0,8
+fails1,demo-fails1.ipynb,manual_submissions/demo-fails1.pdf,1.0,0.0,1.0,1.0,1.0,0.0,4.0,8
+fails2Hidden,demo-fails2Hidden.ipynb,manual_submissions/demo-fails2Hidden.pdf,1.0,2.0,1.0,0.0,1.0,0.0,5.0,8
