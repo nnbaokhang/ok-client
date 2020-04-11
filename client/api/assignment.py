@@ -282,7 +282,7 @@ class Settings:
     parsing the command line. For example:
 
         args = Settings(
-            server='http://localhost:5000',
+            server='http://10.18.22.230:5000',
             no_browser=True,
             backup=True,
             timeout=60,
