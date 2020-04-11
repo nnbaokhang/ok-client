@@ -4,7 +4,7 @@ import client
 VERSION = client.__version__
 
 setup(
-    name='okpy',
+    name='okpy_test',
     version=VERSION,
     author='John Denero, Soumya Basu, Stephen Martinis, Sharad Vikram, Albert Wu',
     # author_email='',
