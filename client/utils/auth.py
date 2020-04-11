@@ -180,7 +180,7 @@ def perform_oauth(code_fn, *args, **kwargs):
         return access_token
 
 def server_url(cmd_args):
-    scheme = 'http' if cmd_args.insecure else 'https'
+    scheme = 'http'
     return '{}://{}'.format(scheme, cmd_args.server)
 
 def authenticate(cmd_args, endpoint='', force=False):
