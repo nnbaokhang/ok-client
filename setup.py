@@ -11,7 +11,7 @@ setup(
     description=('ok.py supports programming projects by running tests, '
                 'tracking progress, and assisting in debugging.'),
     # long_description=long_description,
-    url='https://github.com/okpy/ok-client',
+    url='https://github.com/nnbaokhang/ok-client',
     # download_url='https://github.com/okpy/ok/releases/download/v{}/ok'.format(VERSION),
 
     license='Apache License, Version 2.0',
