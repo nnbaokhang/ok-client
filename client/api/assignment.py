@@ -275,12 +275,14 @@ class Assignment(core.Serializable):
         print()
 
 class Settings:
+    '''
     args = Settings(
             server='http://10.18.22.230:5000',
             no_browser=True,
             backup=True,
             timeout=60,
         )
+    '''
     assignment = Assignment(args)
    
     def __init__(self, **kwargs):
