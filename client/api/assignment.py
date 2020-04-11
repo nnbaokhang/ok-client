@@ -158,15 +158,12 @@ class Assignment(core.Serializable):
             self.cmd_args.question, self.cmd_args.all)
 
     def set_args(self, **kwargs):
-     
-
-            assignment.set_args(
+        assignment.set_args(
                 server='10.18.22.230:5000',
                 no_browser=True,
                 backup=True,
                 timeout=60,
             )
- 
         self.cmd_args.update(**kwargs)
 
     def authenticate(self, force=False, inline=False):
@@ -278,14 +275,13 @@ class Assignment(core.Serializable):
         print()
 
 class Settings:
- 
-        args = Settings(
+    args = Settings(
             server='http://10.18.22.230:5000',
             no_browser=True,
             backup=True,
             timeout=60,
         )
-        assignment = Assignment(args)
+    assignment = Assignment(args)
    
     def __init__(self, **kwargs):
         from client.cli.ok import parse_input
