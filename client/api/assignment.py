@@ -282,9 +282,8 @@ class Settings:
             backup=True,
             timeout=60,
         )
-    '''
     assignment = Assignment(args)
-   
+    '''
     def __init__(self, **kwargs):
         from client.cli.ok import parse_input
         self.args = parse_input([])
