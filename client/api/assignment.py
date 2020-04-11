@@ -158,7 +158,7 @@ class Assignment(core.Serializable):
             self.cmd_args.question, self.cmd_args.all)
 
     def set_args(self, **kwargs):
-        """Set command-line arguments programmatically. For example:
+     
 
             assignment.set_args(
                 server='10.18.22.230:5000',
@@ -166,7 +166,7 @@ class Assignment(core.Serializable):
                 backup=True,
                 timeout=60,
             )
-        """
+ 
         self.cmd_args.update(**kwargs)
 
     def authenticate(self, force=False, inline=False):
@@ -278,9 +278,7 @@ class Assignment(core.Serializable):
         print()
 
 class Settings:
-    """Command-line arguments that are set programmatically instead of by
-    parsing the command line. For example:
-
+ 
         args = Settings(
             server='http://10.18.22.230:5000',
             no_browser=True,
@@ -288,7 +286,7 @@ class Settings:
             timeout=60,
         )
         assignment = Assignment(args)
-    """
+   
     def __init__(self, **kwargs):
         from client.cli.ok import parse_input
         self.args = parse_input([])
