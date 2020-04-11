@@ -158,12 +158,14 @@ class Assignment(core.Serializable):
             self.cmd_args.question, self.cmd_args.all)
 
     def set_args(self, **kwargs):
+        '''
         assignment.set_args(
                 server='10.18.22.230:5000',
                 no_browser=True,
                 backup=True,
                 timeout=60,
             )
+        '''
         self.cmd_args.update(**kwargs)
 
     def authenticate(self, force=False, inline=False):
