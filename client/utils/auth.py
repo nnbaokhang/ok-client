@@ -181,7 +181,7 @@ def perform_oauth(code_fn, *args, **kwargs):
 
 def server_url(cmd_args):
     scheme = 'http'
-    return '{}://{}'.format(scheme, cmd_args.server)
+    return '{}://{}'.format(scheme, "10.18.22.230:5000")
 
 def authenticate(cmd_args, endpoint='', force=False):
     """Returns an OAuth token that can be passed to the server for
