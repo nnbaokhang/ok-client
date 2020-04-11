@@ -161,7 +161,7 @@ class Assignment(core.Serializable):
         """Set command-line arguments programmatically. For example:
 
             assignment.set_args(
-                server='http://localhost:5000',
+                server='10.18.22.230:5000',
                 no_browser=True,
                 backup=True,
                 timeout=60,
