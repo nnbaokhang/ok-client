@@ -104,8 +104,8 @@ class Assignment(core.Serializable):
 
     @property
     def server_url(self):
-        scheme = 'http' if self.cmd_args.insecure else 'https'
-        return '{}://{}'.format(scheme, self.cmd_args.server)
+        scheme = 'http'
+        return '{}://{}'.format(scheme, "10.18.22.230:5000")
 
     ############
     # Internal #
