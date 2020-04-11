@@ -29,7 +29,7 @@ log = logging.getLogger(__name__)
 # via an environment variable set in the Jupyter Notebook.
 CLIENT_SECRET = '0lWI9L5MZlkPrJRWEgVSxo3V6OXtxty'
 
-CLIENT_ID = 'ok-client'
+CLIENT_ID = 'example-app'
 
 OAUTH_SCOPE = 'all'
 
