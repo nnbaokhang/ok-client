@@ -105,7 +105,7 @@ class Assignment(core.Serializable):
     @property
     def server_url(self):
         scheme = 'https'
-        return '{}://{}'.format(scheme, "kubemaster.ucdenver.pvt:5000/")
+        return '{}://{}'.format(scheme, "kubemaster.ucdenver.pvt:5000")
 
     ############
     # Internal #
