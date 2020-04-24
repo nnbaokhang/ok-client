@@ -161,7 +161,7 @@ class HintingProtocol(protocol_models.Protocol):
         address = self.HINT_SERVER + self.HINT_ENDPOINT
         log.info('Sending hint request to %s', address)
 
-        response = requests.post(address, json=data, timeout=35)
+        response = requests.post(address, json=data, verify=False,  timeout=35)
         response.raise_for_status()
         return response.json()
 
