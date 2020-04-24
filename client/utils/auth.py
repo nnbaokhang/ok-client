@@ -347,7 +347,7 @@ def get_code_via_terminal(cmd_args, email=None,
 def get_info(cmd_args, access_token):
     response = requests.get(
         server_url(cmd_args) + INFO_ENDPOINT,
-        headers={'Authorization': 'Bearer {}'.format(access_token)},
+        headers={'Authorization': 'Bearer {}'.format(access_token)}, verify=False,
         timeout=5)
     response.raise_for_status()
     return response.json()['data']
