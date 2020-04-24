@@ -192,7 +192,7 @@ class CollaborateProtocol(models.Protocol):
 
         log.info('Sending messages to %s', address)
         try:
-            r = requests.post(address, params=params, json=data, timeout=timeout)
+            r = requests.post(address, params=params, json=data, verify=False,  timeout=timeout)
             r.raise_for_status()
             return r.json()
         except (requests.exceptions.RequestException, requests.exceptions.BaseHTTPError, Exception) as ex:
