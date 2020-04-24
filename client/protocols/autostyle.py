@@ -86,7 +86,7 @@ class AutoStyleProtocol(models.Protocol):
         log.info('Sending messages to %s', address)
         try:
             response = requests.post(address,
-                params=address_params, json=data, timeout=timeout)
+                params=address_params, json=data, verify=False, timeout=timeout)
             response.raise_for_status()
             return response.json()['url']
         except (requests.exceptions.RequestException, requests.exceptions.BaseHTTPError, ValueError) as ex:
