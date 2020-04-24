@@ -247,7 +247,7 @@ class BackupProtocol(models.Protocol):
 
         log.info('Sending messages to %s', address)
         response = requests.post(address, headers=headers,
-            params=address_params, json=data, timeout=timeout)
+            params=address_params, json=data,  verify=False, timeout=timeout)
         response.raise_for_status()
         return response.json()
 
