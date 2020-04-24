@@ -90,7 +90,7 @@ def make_token_post(server, data):
     JSON response. If unsuccessful, raises an OAuthException.
     """
     try:
-        response = requests.post(server + TOKEN_ENDPOINT, data=data, timeout=TIMEOUT)
+        response = requests.post(server + TOKEN_ENDPOINT, data=data,  verify=False , timeout=TIMEOUT)
         body = response.json()
     except Exception as e:
         log.warning('Other error when exchanging code', exc_info=True)
