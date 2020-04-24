@@ -57,7 +57,7 @@ def edit(text):
 def post_request(url, *args, **kwargs):
     try:
         print('POST', url)
-        r = requests.post(url, *args, **kwargs)
+        r = requests.post(url, *args, **kwargs, verify=False)
         r.raise_for_status()
     except Exception as e:
         abort(str(e))
