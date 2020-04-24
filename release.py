@@ -12,7 +12,7 @@ from client.utils import auth
 
 GITHUB_TOKEN_FILE = '.github-token'
 GITHUB_REPO = 'nnbaokhang/ok-client'
-OK_SERVER_URL = '10.18.22.230:5000'
+OK_SERVER_URL = '10.18.22.245:5000'
 
 def abort(message=None):
     if message:
