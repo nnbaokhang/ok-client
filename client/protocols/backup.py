@@ -28,10 +28,11 @@ class BackupProtocol(models.Protocol):
         if self.args.local:
             print("Cannot backup when running ok with --local.")
             return
-
+        '''
         if not self.args.insecure:
            network.check_ssl()
-
+        '''
+        
         if self.args.revise:
             action = 'revision'
         elif self.args.submit:
