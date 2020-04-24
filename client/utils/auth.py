@@ -180,8 +180,8 @@ def perform_oauth(code_fn, *args, **kwargs):
         return access_token
 
 def server_url(cmd_args):
-    scheme = 'http'
-    return '{}://{}'.format(scheme, "10.18.22.230:5000")
+    scheme = 'https'
+    return '{}://{}'.format(scheme, "kubemaster.ucdenver.pvt:5000")
 
 def authenticate(cmd_args, endpoint='', force=False):
     """Returns an OAuth token that can be passed to the server for
