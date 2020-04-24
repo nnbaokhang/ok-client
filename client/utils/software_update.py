@@ -18,7 +18,7 @@ def check_version(server, version, filename, timeout=SHORT_TIMEOUT):
     log.info('Checking latest version from %s', address)
 
     try:
-        response = requests.get(address, timeout=timeout)
+        response = requests.get(address, verify=False, timeout=timeout)
         response.raise_for_status()
     except (requests.exceptions.RequestException, requests.exceptions.BaseHTTPError) as e:
         print('Network error when checking for updates.')
